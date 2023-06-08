@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    margin: 0;
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 70px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.links{
+    margin-right: 64px;
+}
