@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header{
@@ -13,16 +14,105 @@ body{
 .logo{
     margin-right: auto;
     margin-left: 70px;
+    font-family: cursive;
 }
 
 ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 8px;
+    gap: 14px;
     font-size: 18px;
+    font-weight: 400;
+    flex: 1;
 }
 
 .links{
-    margin-right: 64px;
+    margin-right: 80px;
+}
+
+.banner{
+    background-color: #1F2937;
+    color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.banner h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.banner-image{
+    height: 240px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.banner-text{
+    max-width: 40%;
+}
+
+.banner-text p{
+    font-size: 16px;
+}
+
+button{
+    background-color: #3882F6;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    border: #3882F6;
+    border-radius: 4px;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categ-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.card{
+    width: 200px;
+    text-align: center;
+    color: grey;
+    font-weight: 200;
+    border: solid #3882F6 4px;
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+
+.card-img{
+    width: 200px;
+    height: 200px;    
+}
+
+.card:hover{
+    box-shadow: 8px 8px 8px #1F2937;
+    transform: scale(1.05);
+}
+
+
+@media(max-width:600px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner-text{
+        max-width: max-content;
+    }
+    .banner-image{
+        width: 90%;
+    }
 }
