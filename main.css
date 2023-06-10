@@ -80,17 +80,18 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: #737bd1;
 }
 
 .categ-cards{
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    justify-content: center;
+    gap: 24px;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 16px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .card{
@@ -104,7 +105,8 @@ button:hover{
 }
 
 .card-img{
-    border-radius: 8px; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
     width: 240px;
     height: 240px;    
 }
@@ -146,6 +148,7 @@ button:hover{
     margin-left: auto;
     font-size: 24px;
     margin-right: 24px;
+    font-weight: 400;
 }
 
 .ad{
@@ -183,13 +186,27 @@ button:hover{
 }
 
 .ad-block button{
-    border: solid #1F2937 2px;
+    border: dashed white 2px;
 }
 
 .ad-btn{
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 20px;
+    color: white;
+    height: 40px;
+}
+
+li:hover{
+    color: #F3BCC8;
 }
 
 @media(max-width:600px){
@@ -207,5 +224,12 @@ button:hover{
     }
     .ad-block{
         flex-direction: column;
+        padding: 40px;
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    .header{
+        gap:20px;
     }
 }
